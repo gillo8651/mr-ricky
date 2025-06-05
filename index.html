@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="r.css">
+</head>
+<body>
+   <body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand floating" href="#">Mr Ricky</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><span class="nav-link" onclick="showSection('home')">Home</span></li>
+          <li class="nav-item"><span class="nav-link" onclick="showSection('about')">About</span></li>
+          <li class="nav-item"><span class="nav-link" onclick="showSection('contact')">Contact</span></li>
+          <li class="nav-item"><span class="nav-link" onclick="showSection('login')">Login</span></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero-section active-section">
+    <div class="container">
+      <h1 class="display-4 floating">Welcome to My Portfolio</h1>
+      <img src="G.png" alt="Cartoon" class="cartoon-img floating">
+      <p class="lead">"Hi, and welcome to my portfolio! I'm Gilbert Kingori, 
+        a creative web developer passionate about turning ideas into modern, functional websites.  
+        Everything you see here is designed with the user in mind—fast-loading, mobile-friendly, and built with clean, professional code. 
+        From eye-catching layouts to smooth interactions. My goal is always the same: help you stand out online and bring real results to your business.
+         Whether you're looking to launch a new website, refresh your brand, or add smart features to your current site—I'm ready to make it happen. 
+         Take a look around, and if you like what you see, let’s start building something great together."</p>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="floating">About Me</h2>
+     <img src="m.jpg" alt="Cartoon About" class="cartoon-img floating">
+           <p class="lead">Hi there! I'm Gilbert Kingori, a passionate frontend web developer who turns code into creativity. 
+            I specialize in building fast, responsive, and user-friendly websites using HTML, CSS, JavaScript, and modern tools like React. 
+            But what truly sets me apart is how I blend frontend development with my love for cartoon art and digital illustration.
+            Every website I create isn't just functional—it’s expressive. 
+            I infuse bold visuals, playful animations, and artistic storytelling into my work to give each project a unique personality. 
+            Whether it’s a small portfolio or a full-blown business site, I make sure it doesn’t just work—it leaves a lasting impression.
+           I believe great web design should spark curiosity, connect emotionally with users, and make brands come alive. 
+           My goal is to help clients like you build online experiences that not only look amazing but also deliver real results.
+           Let’s build something visually powerful, technically strong, and creatively unforgettable.
+           Explore my work—and when you're ready, I’d love to bring your vision to life.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="floating">Contact Me</h2>
+      <form class="card-custom">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Your Name">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Your Email">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="login" class="login-section active-section">
+  <div class="container">
+    <div class="login-card">
+      <h2 class="floating">Welcome Back 👋</h2>
+      <p class="sub-text">Login to access your dashboard</p>
+      <form>
+        <div class="mb-3">
+          <input type="email" class="form-control login-input" placeholder="Email address" required>
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control login-input" placeholder="Password" required>
+        </div>
+        <div class="text-end mb-3">
+          <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+
+        <label class="otp-label">Enter OTP</label>
+        <div class="otp-box d-flex justify-content-between mb-3">
+          <input type="text" maxlength="1" class="otp-input" required>
+          <input type="text" maxlength="1" class="otp-input" required>
+          <input type="text" maxlength="1" class="otp-input" required>
+          <input type="text" maxlength="1" class="otp-input" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 login-button">Login</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+ <footer class="cta-footer">
+  <div class="cta-content">
+    <h2>Ready to bring your ideas to life?</h2>
+    <p>I'm here to help you build stunning, responsive websites that stand out. Let's create something amazing together!</p>
+    <a href="contact.html" class="cta-button">Place Your Order</a>
+  </div>
+</footer>
+
+<script src="r.js"></script>
+</body>
+</html>

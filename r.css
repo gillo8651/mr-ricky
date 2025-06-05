@@ -1,0 +1,285 @@
+    body {
+      background-image: url(r.jpg);
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    p {
+      font-family: Verdana;
+      font-size: 30px;
+      text-align: right;
+    }
+
+    .navbar {
+      background-color: none;
+      backdrop-filter: blur(5px);
+      padding: 20px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px red;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      font-family: Verdana;
+      font-size: 25px;
+    }
+
+    .nav-link{
+      float: left;
+      color: #0337e0 !important;
+      margin-right: 25px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      position: relative;
+      transition: all 0.3s ease;
+      padding: 10px 15px;
+      border-radius: 8px;
+    }
+
+    .nav-link:hover{
+      color: orangered;
+      background-color: purple;
+      box-shadow: 0 4px 15px red;
+      transform: translateY(-2px)scale(1.05);
+    }
+
+    .nav-link::after{
+      content: "";
+      position: absolute;
+      left: 10%;
+      bottom: 5px;
+      width: 0%;
+      height: 2px;
+      background: orange;
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after{
+      width: 80%;
+    }
+    
+    .hero-section, .about-section, .contact-section, .login-section {
+      display: none;
+      padding: 80px 50px;
+      text-align: center;
+      background: none;
+      color: orangered;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px blue;
+      transition:  transform 0.8s ease, box-shadow 0.8s ease;
+    }
+
+    .hero-section:hover{
+        transform: scale(1.01);
+        box-shadow: 0 12px 30px orange;
+    }
+
+    .contact-section {
+  display: none;
+  padding: 100px 20px;
+  background: rgba(0, 0, 80, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 15px 30px red;
+  color: #ffffff;
+}
+
+.contact-section h2 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.contact-section form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px orangered;
+}
+
+.contact-section .form-control {
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+}
+
+.contact-section .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 10px #2196f3;
+}
+
+.contact-section button {
+  border-radius: 30px;
+  padding: 10px 30px;
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-section button:hover {
+  background-color: #0d47a1;
+}
+
+.login-section {
+  display: none;
+  padding: 80px 20px;
+  background: rgba(0, 0, 70, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  max-width: 400px;
+  margin: 50px auto;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+ .login-section {
+    display: none;
+    padding: 100px 30px;
+    background: rgba(0, 0, 80, 0.5);
+    backdrop-filter: blur(10px);
+    max-width: 450px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px red;
+  }
+
+  .login-card {
+    background: none;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px orangered;
+    color: #fff;
+  }
+
+  .login-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .sub-text {
+    font-size: 0.95rem;
+    color: #bbb;
+    margin-bottom: 30px;
+  }
+
+  .login-input {
+    border-radius: 30px;
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+  }
+
+  .forgot-password {
+    font-size: 0.85rem;
+    color: #90caf9;
+    text-decoration: none;
+  }
+
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+
+  .otp-label {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .otp-box .otp-input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.4rem;
+    background: rgba(255, 255, 255, 0.95);
+  }
+
+  .otp-input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #2196f3;
+  }
+
+  .login-button {
+    border-radius: 30px;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+
+  .active-section {
+      display: block;
+    }
+
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .card-custom {
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .cartoon-img {
+      background: cover;
+      max-width: 250px;
+      margin: 20px auto;
+    }
+
+ .cta-footer {
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  border-top: 3px solid orange;
+  box-shadow: 0 -4px 20px rgba(255, 165, 0, 0.2);
+}
+
+.cta-content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: orange;
+}
+
+.cta-content p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  padding: 12px 25px;
+  background-color: orange;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ff9800;
+  transform: scale(1.05);
+}
